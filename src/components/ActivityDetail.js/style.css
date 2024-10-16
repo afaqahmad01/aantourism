@@ -1,0 +1,68 @@
+.activity-details {
+	margin-top: 1.5rem;
+}
+
+.activity-details h1 {
+	font-family: Arial;
+	font-size: 25.71px;
+	font-weight: 700;
+	line-height: 31.6px;
+	text-align: left;
+	color: #000000;
+}
+
+.reviews {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.reviews span {
+	font-size: 1.5rem;
+}
+
+.reviews p {
+	font-size: 1rem;
+	color: #666;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+	.activity-details {
+		margin-top: 1rem;
+	}
+
+	.activity-details h1 {
+		font-size: 20px; /* Adjust font size for smaller screens */
+		line-height: 26px;
+		text-align: center; /* Center align for mobile */
+	}
+
+	.reviews {
+		flex-direction: column; /* Stack reviews vertically on mobile */
+		align-items: flex-start; /* Align to the start for a better layout */
+	}
+
+	.reviews span {
+		font-size: 1.2rem; /* Reduce size for mobile */
+	}
+
+	.reviews p {
+		font-size: 0.875rem; /* Smaller font size for mobile readability */
+	}
+}
+
+@media (max-width: 480px) {
+	.activity-details h1 {
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.reviews span {
+		font-size: 1rem;
+	}
+
+	.reviews p {
+		font-size: 0.75rem;
+	}
+}

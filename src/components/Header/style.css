@@ -1,0 +1,54 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	background-color: #18546e;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+	width: 129px;
+	height: 47px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+.line {
+	height: 22px;
+	background-color: white;
+	width: 1px;
+}
+
+nav ul li {
+	cursor: pointer;
+	color: #fff;
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 18.48px;
+	text-align: left;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+	nav ul {
+		display: none; /* Hide navigation on mobile */
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		padding: 0.5rem; /* Adjust padding for small screens */
+	}
+
+	nav ul li {
+		font-size: 14px; /* Adjust font size for very small screens */
+	}
+}

@@ -1,0 +1,170 @@
+.review-section {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.review-card {
+	display: flex;
+	border: 1px solid #ddd;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	padding: 20px 13px;
+}
+
+.card-image {
+	object-fit: cover;
+	margin-right: 1.5rem;
+	width: 231px;
+	height: 255px;
+	opacity: 1; /* Set to 1 for visibility */
+}
+
+.right-container {
+	display: flex;
+	flex-direction: column;
+	gap: 27px;
+}
+
+.stars {
+	padding: 10px 0;
+}
+
+h3 {
+	font-family: Arial;
+	font-size: 21.22px;
+	font-weight: 700;
+	line-height: 25.47px;
+	text-align: left;
+	margin: 0;
+	color: #000000;
+}
+
+.text {
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21.83px;
+	text-align: left;
+	color: #000000;
+}
+
+.card-content {
+	display: flex;
+	gap: 1rem;
+	width: 100%;
+}
+
+.card-content h3 {
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 31.6px;
+	text-align: left;
+}
+
+.card-content p {
+	color: #666;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.list {
+	font-family: Inter;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 21.52px;
+	text-align: left;
+}
+
+.card-details {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: Inter;
+	font-size: 14.38px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
+}
+
+.card-details li {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	color: #333;
+	font-size: 0.9rem;
+}
+
+.card-details .icon {
+	color: #333;
+}
+
+.price-check-text {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.card-content div {
+	width: 60%;
+}
+
+.price-check-button {
+	padding: 0.6rem 1.2rem;
+	background-color: #18546e;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-family: Arial;
+	font-size: 13.71px;
+	font-weight: 700;
+	line-height: 21.22px;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.review-card {
+		flex-direction: column;
+		align-items: center;
+		padding: 15px;
+	}
+
+	.card-content {
+		flex-direction: column;
+	}
+
+	.card-content h3 {
+		width: 100%;
+	}
+
+	.card-content div {
+		width: 100%;
+	}
+
+	.list,
+	.card-details {
+		display: none;
+	}
+
+	.card-image {
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	.right-container {
+		width: 100%;
+		text-align: center;
+	}
+
+	.stars {
+		display: block;
+	}
+
+	.price-check-button {
+		margin-top: 10px;
+	}
+}
