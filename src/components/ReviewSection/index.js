@@ -6,10 +6,9 @@ const reviews = [
 		id: 1,
 		title: "Camel Ride, Shows, Dinner",
 		description: [
-			"Get yourself tickets to the award-winning Dubai Frame – the world's largest picture frame.",
-			"Admire unbeaten views of the city.",
-			"On one side, you'll notice iconic landmarks of modern Dubai.",
-			"On the other side, you'll see older parts of the city.",
+			"Get yourself tickets to the award-winning Dubai Frame – the world's largest picture frame and admire unbeaten views of the city.",
+			"On one side, you'll notice iconic landmarks of modern Dubai, and on the other, you'll see older parts of the city.",
+			"On one side, you'll notice iconic landmarks of modern Dubai, and on the other, you'll see older parts of the city.",
 		],
 		details: [
 			{
@@ -101,10 +100,9 @@ const reviews = [
 		id: 2,
 		title: "Camel Ride, Shows, Dinner",
 		description: [
-			"Get yourself tickets to the award-winning Dubai Frame – the world's largest picture frame.",
-			"Admire unbeaten views of the city.",
-			"On one side, you'll notice iconic landmarks of modern Dubai.",
-			"On the other side, you'll see older parts of the city.",
+			"Get yourself tickets to the award-winning Dubai Frame – the world's largest picture frame and admire unbeaten views of the city.",
+			"On one side, you'll notice iconic landmarks of modern Dubai, and on the other, you'll see older parts of the city.",
+			"On one side, you'll notice iconic landmarks of modern Dubai, and on the other, you'll see older parts of the city.",
 		],
 		details: [
 			{
@@ -201,7 +199,7 @@ const ReviewSection = () => {
 				<div className="review-card" key={review.id}>
 					<img src="/dessert.png" alt="Camel ride" className="card-image" />
 					<div className="card-content">
-						<div>
+						<div className="middle-section">
 							<h3>{review.title}</h3>
 							<span className="stars">⭐⭐⭐⭐⭐</span>
 							<ul className="list">

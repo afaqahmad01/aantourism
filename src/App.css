@@ -10,7 +10,7 @@ body {
 }
 
 .activity {
-	padding: 2rem;
+	padding: 2rem 5rem;
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 
 .main-content {
 	display: flex;
-	padding: 0 2rem;
+	padding: 0 5rem;
 }
 
 .left-section {
@@ -38,6 +38,7 @@ h1 {
 @media (max-width: 480px) {
 	.main-content {
 		flex-direction: column;
+		padding: 0 2rem;
 	}
 
 	.desktop-view {
@@ -46,6 +47,10 @@ h1 {
 
 	.mobile-view {
 		display: block;
+	}
+
+	.activity {
+		padding: 2rem;
 	}
 }
 
